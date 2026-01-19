@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    background-color: white;
+    color: rgb(55, 65, 81);
+    line-height: 1.5;
+}
+
+.container {
+    border: 7px solid rgb(230, 230, 230);
+    border-radius: 6px;
+    width: 60%;
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.content {
+    width: 100%;
+    max-width: 64rem;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin-bottom: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+.agent-signin {
+    color: rgb(20, 74, 117);
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agent-signin:hover {
+    color: rgb(20, 74, 117);
+    text-decoration: underline;
+}
+
+.header .img {
+   width: 12px;
+   height: 12px;
+   margin-top: 2px;
+   margin-left: 3px;
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+}
+
+.social-signin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.social-btn {
+    width: 95%;
+    height: 45px;
+    padding: 0 12px;
+    gap: 20px;
+    border: thin solid lightgray;
+    border-radius: 4px;
+    background-color: white;
+    color:rgb(51, 51, 51);
+    box-shadow: 0 6px 10px lightgray;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    background-color: rgb(216, 217, 219);
+    color: rgb(20, 74, 117);
+    transition: all 0.2s ease;
+}
+
+.social-icon img {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(47, 57, 65);
+}
+
+.form-input {
+    width: 90%;
+    height: 45px;
+    padding: 0 12px;
+    border: thin solid grey;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 2px solid rgb(31, 115, 184);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    transition: all ease;
+}
+
+
+.signin-btn {
+    width: 90%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: rgb(31, 115, 184);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: rgb(20, 74, 117);
+    transition: background-color 0.5s ease;
+}
+
+
+.footer {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: rgb(73, 84, 92);
+    font-weight: 400;
+}
+
+.signup-link {
+    color: rgb(20, 74, 117);
+}
+
+
+@media (max-width: 1023px) {
+    .container {
+        width: 85%;
+        height: auto;
+        margin: 30px auto;
+        padding: 12px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .social-signin {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+
+    .form-input,
+    .signin-btn {
+        width: 100%;
+    }
+
+    .footer {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .header h1 {
+        font-size: 14px;
+    }
+
+    .agent-signin {
+        font-size: 12px;
+    }
+
+    .main-content {
+        gap: 20px;
+    }
+
+    .social-btn,
+    .form-input,
+    .signin-btn {
+        font-size: 13px;
+        height: 42px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .header h1 {
+        font-size: 12px;
+    }
+
+    .social-btn {
+        font-size: 12px;
+        height: 40px;
+        gap: 8px;
+    }
+
+    .form-input,
+    .signin-btn {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .footer p {
+        font-size: 11px;
+    }
+}
